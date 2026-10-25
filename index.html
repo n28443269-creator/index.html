@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TROLLMODZ - Приватные Панели и Моды</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #0b0c10;
+            color: #c5c6c7;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        header {
+            width: 100%;
+            background-color: #1f2833;
+            padding: 20px;
+            text-align: center;
+            border-bottom: 3px solid #66fcf1;
+            box-shadow: 0px 4px 15px rgba(102, 252, 241, 0.2);
+        }
+
+        header h1 {
+            color: #66fcf1;
+            font-size: 2.5rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        header p {
+            color: #45a29e;
+            margin-top: 5px;
+            font-size: 1rem;
+        }
+
+        .container {
+            max-width: 1200px;
+            width: 100%;
+            padding: 40px 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .welcome-box {
+            text-align: center;
+            margin-bottom: 5px;
+            background: #1f2833;
+            padding: 30px;
+            border-radius: 10px;
+            border: 1px solid #45a29e;
+            width: 100%;
+            max-width: 800px;
+        }
+
+        .welcome-box h2 {
+            color: #fff;
+            margin-bottom: 15px;
+        }
+
+        .cards-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            width: 100%;
+            margin-top: 40px;
+        }
+
+        .card {
+            background-color: #1f2833;
+            border-radius: 10px;
+            border: 1px solid #45a29e;
+            padding: 25px;
+            text-align: center;
+            transition: transform 0.3s, border-color 0.3s;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            border-color: #66fcf1;
+            box-shadow: 0px 5px 15px rgba(102, 252, 241, 0.1);
+        }
+
+        .card h3 {
+            color: #fff;
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+
+        .card .price {
+            color: #66fcf1;
+            font-size: 1.8rem;
+            font-weight: bold;
+            margin: 20px 0;
+        }
+
+        .card ul {
+            text-align: left;
+            list-style: none;
+            margin-bottom: 25px;
+        }
+
+        .card ul li {
+            margin-bottom: 8px;
+            font-size: 0.9rem;
+        }
+
+        .card ul li::before {
+            content: "⚡ ";
+            color: #66fcf1;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: #66fcf1;
+            color: #0b0c10;
+            padding: 12px 25px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            text-transform: uppercase;
+            transition: background 0.3s;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: #45a29e;
+            color: #fff;
+        }
+
+        .tg-btn {
+            background-color: #0088cc;
+            color: #fff;
+            margin-top: 20px;
+        }
+
+        .tg-btn:hover {
+            background-color: #006699;
+        }
+
+        footer {
+            margin-top: auto;
+            background-color: #1f2833;
+            width: 100%;
+            padding: 20px;
+            text-align: center;
+            font-size: 0.8rem;
+            border-top: 1px solid #45a29e;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>TROLLMODZ SHOP</h1>
+        <p>Автоматическая покупка ключей для приватных панелей</p>
+    </header>
+
+    <div class="container">
+        <div class="welcome-box">
+            <h2>Добро пожаловать в магазин софта!</h2>
+            <p>Все ключи выдаются автоматически сразу после оплаты. Наш софт полностью оптимизирован под последние обновления игры и защищен от банов.</p>
+            <a href="https://t.me" target="_blank" class="btn tg-btn">Присоединиться к Telegram</a>
+        </div>
+
+        <div class="cards-grid">
+            <!-- КАРТОЧКА 1 -->
+            <div class="card">
+                <div>
+                    <h3>Ключ на 24 часа</h3>
+                    <div class="price">150 ₽</div>
+                    <ul>
+                        <li>Полный доступ к софту</li>
+                        <li>Обход античита (Anti-Ban)</li>
+                        <li>Aimbot / ESP / Спидхак</li>
+                        <li>Поддержка 24/7</li>
+                    </ul>
+                </div>
+                <a href="#" class="btn">Купить ключ</a>
+            </div>
+
+            <!-- КАРТОЧКА 2 -->
+            <div class="card">
+                <div>
+                    <h3>Ключ на 7 дней</h3>
+                    <div class="price">500 ₽</div>
+                    <ul>
+                        <li>Экономия более 30%</li>
+                        <li>Обход античита (Anti-Ban)</li>
+                        <li>Aimbot / ESP / Спидхак</li>
+                        <li>Мгновенные обновления</li>
+                    </ul>
+                </div>
+                <a href="#" class="btn">Купить ключ</a>
+            </div>
+
+            <!-- КАРТОЧКА 3 -->
+            <div class="card">
+                <div>
+                    <h3>Ключ на 30 дней</h3>
+                    <div class="price">1200 ₽</div>
+                    <ul>
+                        <li>Самая выгодная цена</li>
+                        <li>VIP-статус на форуме</li>
+                        <li>Приоритетные обновления</li>
+                        <li>Личный менеджер в ТГ</li>
+                    </ul>
+                </div>
+                <a href="#" class="btn">Купить ключ</a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 TROLLMODZ. Все права защищены. Данный сайт не связан с разработчиками оригинальной игры.</p>
+    </footer>
+
+</body>
+</html>
